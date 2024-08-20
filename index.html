@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariselvam Ganesan - Personal Portfolio</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUhmYiQ4CqfAq2pyp4xmp4jiILGXU2eTYvw&s" type="image/x-icon">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            animation: backgroundShift 10s ease infinite;
+        }
+
+        @keyframes backgroundShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3em;
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav button {
+            background-color: #fff;
+            border: none;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 16px;
+            color: #333;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav button:hover {
+            transform: scale(1.1);
+            background-color: #f39c12;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        p, ul {
+            font-size: 1.2em;
+        }
+
+        /* Certificates Section */
+        .certificate-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .certificate-gallery img {
+            width: 250px;
+            height: auto;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 2s ease;
+        }
+
+        .certificate-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.jpeg" height="150px" width="150px" style="border-radius: 100%;">
+        <h1>I'm Mariselvam Ganesan</h1>
+        <h3>Aspiring Web Developer & Designer</h3>
+    </header>
+
+    <nav>
+        <button><a href="#about">About Me</a></button>
+        <button><a href="#education">Education</a></button>
+        <button><a href="#certificates">Certificates</a></button>
+        <button><a href="#contact">Contact</a></button>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="personal-info">
+            <p><strong>Age:</strong> 19</p>
+            <p><strong>Native Place:</strong> Kovilpatti, Tamilnadu.</p>
+            <p><strong>:</strong> Kovilpatti, Tamilnadu.</p>
+        </div>
+        <p>Hello! I’m Mariselvam Ganesan, a passionate web developer and designer.I am a pre-final year student of Bachelor of Engineering in Electronics and Communication Engineering at P.S.R. Engineering College, Sivakasi. I specialize in creating modern and
+            responsive websites that offer a seamless user experience. Whether it's front-end design or back-end
+            development, I love bringing ideas to life on the web.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-info">
+            <p>Bachelor of Engineering in ECE (Electronics and Communication Engineering) P.S.R. Engineering College, Sivakasi - <strong>Graduation year:</strong> 2026</p>
+            <p><strong>High School</strong><br>Nadar Higher Secondary School - Kovilpatti.</p>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-gallery">
+            <center>
+            <dl>
+           <dt><img src="img/certificate1.jpeg" alt="Certificate 1"></dt> 
+            <dd><h4>Mongo DB Transactions</h4></dd>
+           <dt><img src="img/certificate2.jpeg" alt="Certificate 2"></dt> 
+           <dd><h4>Matlab onramp</h4></dd> 
+            <dt><img src="img/certificate3.jpeg" alt="Certificate 3"></dt>
+           <dd><h4>Mongo DB Indexes</h4></dd> 
+            <!-- Add more certificate images as needed --></dl>
+            </center>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-info">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAAAD////c3Nzo6OhhYWHPz890dHT4+Pjx8fGFhYW5ubn6+vrt7e1cXFzKysrj4+Nra2uUlJSNjY2AgICHh4dPT0+ampqtra3U1NQUFBTLy8stLS1JSUmlpaW2tra/v78lJSUyMjJVVVUXFxcLCwtCQkI5OTkfHx93d3c+Pj4D/D90AAAKJUlEQVR4nO2d6XriOgyGE2gJO2GnLAXaaU/n/m/wsJQkDrEWW04cmO9P5+lA6pcES5ZkOQgfXUHVA3Cuf4T1VwmEUbu/6u7Gk2k8mG+/vr+280E8nYx33VW/Hbn/804Jo8Z60RpsAr02g9Zi3XDK6YxwtO9sDwBbVodtZz9yNRAnhM1li8iWVbxsuhiMOGF73YEeS1ib6bAtPSBZwvY+fjPGu+ot7spCShIOY0u6mwZDwVGJETYnQnhXzcRmHhnCXncgynfWoNsTGZsEYbQzn1sgHXYShtKesD9zgndVp185oVO+s6a2RtKO0DnfhdHuPloRjkvgO2tcEeF7SXxnvVdAuJqXCBgE21XJhL1pqXxnTQ1Nhxnh8LN0wJPHaubLmRC2pfxPrmITn9yAcGi7fDCXyW3kE5ZhAvXqOCccHSsFDIIjd9HBJNxXzHdW1yVhtU/oTbwnlUMYlWvk9ZpzTCODcPSnarJUjC8jnXBdNZUiutkgEy6rZsppKU1Y1kKJLuqSikgoG0iT0UySsPyVBEVTOUKTLEQZakkR/lRNohUFkUDo5yN6FeFBxQn98NR0wqcblNA/M6EKNRoYoW+G/l6Y6UcIh1WPnyDEgYMJR1WPniTYDQcJo6rHThS4mAIJfVkPYpqbEvptJ7KCbAZA6ENMhiogdqMnrMcsc5N+ttETVh025OnIJ+xUPWamtF9FHWEdTL0qneHXELary02Y6k2TttEQVpVdslHMIazfM3pW8XNaSNir3zN61lthEVUhoc+rekiFK/4iwhV2pY9J97VRtl7fJx/YwIrKGYoIt/BlxuJFrmS1kYhDkQteQAjXyfzIVAyaqgcH/grqbgoIwUsw05MO1AXHd//6+1+BAXzJ4l1TgabsPjB1R9j3+w6eBd7FuzK/O0LI4+YXQrgRZM3uxpgnbEKfT7WTTKoeNMh8PWqeEPp4FmURoFowbmKOEPwWlrANiygwCJj7JuYIoW/hS3kEqF7oN1ElBD8bfx5S+DHNPWsq4Q56475MBERgHHCnvFQh7B2gNzZKZYDVgAZ6UOZ8hRB2iNRpeNH6lXF5Mg3l9mfU7who1FTHRCGEt/aohOlrO+7MZC91IQfKf8CEymuzhEgMWCXMzGZ/XH1D95lia3UmhwmVoWYJkaIZLeHpQ3Oxx7Wp/AkW4URDCL8LInRhSnIGgUWoUKX/xDIxIGFwfBXlW33nrs8jzKzyMoSQn4ATGlbSFyu6r1HiEWZenRK2kTehhFZ7dxQVxVF4hEH6aaeEsDEkEQYfEl5BozCkxiRMp/eUEA3kEwjJBYOANDM6kzAN8SeEbbTGmURoaxy121WYhGmeJiHEUxU0wtNYzHd99vUPEpMwnU0TQjySTyXMO/d0QUsbLmGySkwID4KEwdHEHW/kTaAV4SZPiL+FQxgEU65xjJC0OpcwGe6NkFChxyIMPnnG8f0/5HpswltF342QkPTlEQbBnD7j9NGsEp/wVj98I8TfwSYMgjFx5UipYWUTJmTXH5TyID5hsKHkOdaknhN8wpFCSKnwMiA8+RZYu4A2cSMAn3CvEFLqg4wIMeNIrkHmE84UQiTte5EhYfBX7443vshX4RNus4TRgfAOiBB2ajvF+YAILu9Ur8knPEQZQjD8eBNEuIdjPP8VueN72ATO1LmBT/gb4L0SkiqEIMJXxOcKPvLGsQmHLo+N8FX5hQHhOkMIpgFuggnRi6ixKjB/cH2xNeEiQ0iasTFC7LZ8r5M3v/4FX/lxMWXWhD8ZQlIfK5QQjYTEVx+nh3ygvx6tNeEgJYxIXgWBECt3ubjDSF+b1m3itSY8RgkhGma7iEJ4mrTg6un5K+xkH9NZ15rwGnC7EIK57UQ0wrBnsxdskvHV7Qn7CSFaqncRkfDkxsPziF7fivdjT7hKCNFQ6UVkQtQWaJTzYO0JuwkhbUAMwrBPd1tvGuR9AnvCXUJI++ZwCE8+GbPHxH1BmT3hOCGk7bbnEfKaZRXVdNoTThJC2liYhKjnkuq7+O3Ka0wIpwkhbe8Bm5Do7+rCOfaEcUJIaz5qQBiO8KX1ly5Dbk/4khDSdlKaEIbhEplx9BuV7QnnCSEtlmBGCHd3g/LG9oTbcghPrqpuMf8GZuLsCb8SQtqcZ0yoC+VN4YCxPeHfhNDxPQwLg2p/sfyU5D10T3jvGeIFOJLfQ5dzaTqo7MKQkrWRnEvd2UNF3cRwkDJvkvbQmU+TU3SNcbRo2VNJn8aRX1qg4SY4UPfdSPqlTtYWGi3J1aiSawsX60N7Sa4P5df4fhCma3zxOI0nhGmcRjjW5g1hGmsTjZd6RJjGSyVj3j4RpjFvubyFV4SZvIVY7skvwkzuSSh/6BthNn8okgP2jjCbAxbI43tImM3jW9dieEmYrcWwrqfxkfB3k55QTZSPhEpNlHVdm4+Eal2bbW2ij4RqbaJtfamPhGp9qW2NsI+EN7Lfn5Z13h4S5uu8LWv1PSTM1+pb7rfwkDC/3yLEF1D1IrzbM0OwiPUivN/3ZLd3zT/C+71reC/IWhEW7D+020PqHWHBHlK7fcDeERbtA7bay+0dYdFebqv9+L4RFu7HR2fTOhEW91Sw6YvhG2GWKvNv894mvhHqepuY9qfxj1DXn8awx1A5hCI9hsz6RJ0Vu+iS1Yizf0KmT9SD9Pra6Ht9PX6/tifouQce2uFT30RoTsw1kHm63pfgUt+fx9Sif+kT9KAFbyLtwEH3gurw7to4PWEvaLjI7RH6eT9BT3bkEo/QV9/jsxH6MmcjUM63eK/3+RaPf0ZJ2PvEr+ahPunnzDz+WUFPcN7TE5zZVcPnlHnuWp0OsLyKfXZe+PjnHz7BGZa1OocUiAMChDX6Kk4ACogwxDtS+iHj84DrcqbzH/MznWsy21icyx2G66pHT5DV2eqM3pSVSd92gkZI3H1Zne5DT1xC4hbaqgTZCSqh1yt+QoyaQBgiffQqVAsfPImQtvGrAlEAaYSeHkNOS6PQCL2cbohHaRAJiT2tyhQ1m0kl9M70Y4aeT+iZA0dPgtEJwxGzT6BLMc4IYxCGEa1Tj3vNOTUTHEJfplTeeUQ8Qi9iN8zaLCZhOIIbk7vXkXtMH5ew6ieVf2IWn1B/6JR7vRlUShgQwp0QXcrodD4TwtNtrCKFanIDjQl5LXRlhHRZlCYMw1W55n9rfCivMSG1u5SMLM6OtCAsLw6HxtOcEYbtMpI3HexAJZeEYdh3zTg1P01RhtAxo+X9kyE8rap2pE5abB12EpXlEoQn89iltUDlaNCVqYKUITypKeuRz8RO+hYjPGko5a++SJYiSxKerMc+tl14vMVd2fpVWcKT2uuZ+byz6QzFy3PFCc9qLk2SOfHS1vQVygnhWaP9bHsgsh22s73YzJKXM8KzosZ68TOAHtrj4GexbjjdUOWU8Kqo3V91d+PJNB7Mt1/fX9v5IJ5Oxrvuqt8uYbNYCYQV6x9h/fX4hP8Dffiq122FcGIAAAAASUVORK5CYII=" alt="Gmail" width="30px"><li>Email: <a href="mailto:mariselvam10064@gmail.com">mariselvam10064@gmail.com</a></li>
+           <img src="data:image/png;base64,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" alt="linkedin" width="30px"> <li>LinkedIn: <a href="https://www.linkedin.com/in/mariselvam-ganesan-9192a12a0/">linkedin.com/in/mariselvam-ganesan</a></li>
+           <img src="data:image/png;base64,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" alt="github" width="30px"> <li>GitHub: <a href="https://github.com/Mariselvamganesan222">github.com/mariselvam222</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mariselvam Ganesan. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
